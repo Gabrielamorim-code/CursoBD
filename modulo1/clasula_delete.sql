@@ -1,0 +1,17 @@
+use projeto;
+
+SELECT * FROM CLIENTES;
+-- clausula delete sempre com o where--
+-- sempre que fizer confira o volume de dados total 
+-- e o volume de deleção 
+-- FACA UM SELECT ANTES DE DELETAR E CONFIRA O QUE FOI EXIBIDO SE ESTIVER DE ACORDO COM O QUE QUER ALTERE A CLAUSULA SELECT * POR DELETE
+
+insert into clientes values('CARLA', 'F', 'C.LOPES@UOL.COM.BR',45638865, '4575-0048','RUA COPPER LEAF - WILLIAMSBURG - KITCHENER');
+
+DELETE FROM CLIENTES
+WHERE NOME = 'CARLA'
+AND EMAIL = 'CARLA@TERATI.COM.BR';
+
+DELETE FROM CLIENTES
+WHERE NOME = 'ANA'
+AND EMAIL = 'ANA@GLOBO.COM';
